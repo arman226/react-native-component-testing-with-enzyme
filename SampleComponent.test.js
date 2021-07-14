@@ -16,7 +16,7 @@ describe('SampleComponent', () => {
 
     //check if the text has changed after pressing the button
     const text = wrapper
-      .findWhere(node => node.prop('testid') === 'text0')
+      .findWhere(node => node.prop('testid') === 'text')
       .render();
 
     expect(text.text()).toBe('I am active');

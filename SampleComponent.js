@@ -10,7 +10,7 @@ const SampleComponent = () => {
 
   return (
     <View testid="sample">
-      <Text testid="text0">{isToggled ? 'I am active' : 'I am inactive'}</Text>
+      <Text testid="text">{isToggled ? 'I am active' : 'I am inactive'}</Text>
       <Button testid="button" title="Click Me" onPress={handleClick} />
     </View>
   );
