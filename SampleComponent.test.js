@@ -11,8 +11,6 @@ describe('Sample Component', () => {
     const TEXT_TEST_ID = 'text';
     const BUTTON_TEST_ID = 'button';
     const wrapper = shallow(<SampleComponent />);
-
-    //trigger button press
     const button = wrapper.find({testid: BUTTON_TEST_ID});
 
     //initial press
@@ -26,7 +24,7 @@ describe('Sample Component', () => {
     // press the button 2nd time
     button.simulate('press');
 
-    // new instance of the textview to change whether its value has changed after the press event
+    // new instance of the textview to check whether its value has changed after the press event
     const textChanged = wrapper.find({testid: TEXT_TEST_ID}).dive();
 
     expect(textChanged.text()).toBe('I am inactive');
